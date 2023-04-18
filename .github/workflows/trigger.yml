@@ -1,0 +1,8 @@
+- name: Trigger Hello World Workflow
+  uses: peter-evans/repository-dispatch@v1
+  with:
+    repository: nagoorbasha7869/helloworld
+    token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    event-type: hello-world
+    client-payload: '{}'
+
